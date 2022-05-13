@@ -61,7 +61,7 @@ while True:
     if result is None:
         result = api.user_timeline(screen_name=user, count=limit, tweet_mode='extended')
         time.sleep(timer)
-        print('Ищу ссылку')
+        print('Waiting for link')
     for tweet in result:
         url_pattern = r'http(?:s)?://\S+'  # Finding link in tweet
         urls = re.findall(url_pattern, tweet.full_text)
