@@ -37,12 +37,7 @@ api = tweepy.API(auth)
 # Browser
 browser = uc.Chrome(use_subprocess=True)
 browser.get('https://discord.com/login')
-time.sleep(0.5)
-browser.find_element_by_xpath(xpath1).send_keys(dsname)
-time.sleep(0.5)
-browser.find_element_by_xpath(xpath2).send_keys(dspass)
-time.sleep(0.5)
-browser.find_element_by_xpath(xpath3).click()
+time.sleep(10)
 wait = WebDriverWait(browser, 15)
 
 # Getting tweets
