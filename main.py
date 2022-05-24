@@ -6,10 +6,6 @@ import urlexpander as ue
 import sqlite3
 import time
 import os
-import undetected_chromedriver as uc
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
 
 class1 = ('contents-3ca1mk')
 xpath1 = ('/html/body/div[1]/div[2]/div/div/div/div/form/div/div/div[1]/div[2]/div[1]/div/div[2]/input')
@@ -55,7 +51,7 @@ sql.execute("""CREATE TABLE IF NOT EXISTS tweets (
 )""")
 db.commit()
 
-# Основной код
+# Cycle
 while True:
     result = None
     if result is None:
